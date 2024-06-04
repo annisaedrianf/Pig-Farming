@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="cetho">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Cattle" Caption="Cattle" ImageName="Navigation_Item_Dashboard_32x32" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Cattle_ListView" ImageName="NewTableStyle" ObjectKey="" ViewId="Cattle_ListView" IsNewNode="True" />
+          <Item Id="CattleAgeType_ListView" Caption="Cattle Age Type" ImageName="Action_Chart_Printing_Preview" ObjectKey="" ViewId="CattleAgeType_ListView" IsNewNode="True" />
+          <Item Id="CattleAgeTypeSetting_ListView" Caption="Cattle Age Type Setting" ImageName="Action_Chart_Options" ObjectKey="" ViewId="CattleAgeTypeSetting_ListView" IsNewNode="True" />
+          <Item Id="CattleBreed_ListView" Caption="Cattle Breed" ImageName="Other Charts" ObjectKey="" ViewId="CattleBreed_ListView" IsNewNode="True" />
+          <Item Id="CattleColor_ListView" Caption="Cattle Color" ImageName="LocalColors" ObjectKey="" ViewId="CattleColor_ListView" IsNewNode="True" />
+          <Item Id="CattleFeed_ListView" Caption="Cattle Feed" ImageName="ShowPieCaptions" ObjectKey="" ViewId="CattleFeed_ListView" IsNewNode="True" />
+          <Item Id="CattleFeedConsumption_ListView" Caption="Cattle Feed Consumption" ImageName="ChartType_Funnel3D" ObjectKey="" ViewId="CattleFeedConsumption_ListView" IsNewNode="True" />
+          <Item Id="CattleFeedNutrition_ListView" Caption="Cattle Feed Nutrition" ImageName="ChartType_Bubble" ObjectKey="" ViewId="CattleFeedNutrition_ListView" IsNewNode="True" />
+          <Item Id="CattleGroup_ListView" Caption="Cattle Group" ImageName="ChartLegendGroup" ObjectKey="" ViewId="CattleGroup_ListView" IsNewNode="True" />
+          <Item Id="CattleMortality_ListView" Caption="Cattle Mortality" ImageName="RedDataBarGradient" ObjectKey="" ViewId="CattleMortality_ListView" IsNewNode="True" />
+          <Item Id="CattlePin_ListView" Caption="Cattle Pin" ImageName="SelectDataSource" ObjectKey="" ViewId="CattlePin_ListView" IsNewNode="True" />
+          <Item Id="CattlePlant_ListView" Caption="Cattle Plant" ImageName="SetDetailDataMember" ObjectKey="" ViewId="CattlePlant_ListView" IsNewNode="True" />
+          <Item Id="CattlePregnancy_ListView" Caption="Cattle Pregnancy" ImageName="RedToBlack" ObjectKey="" ViewId="CattlePregnancy_ListView" IsNewNode="True" />
+          <Item Id="CattleScheduleTime_ListView" Caption="Cattle Schedule Time" ImageName="SwitchTimeScalesTo" ObjectKey="" ViewId="CattleScheduleTime_ListView" IsNewNode="True" />
+          <Item Id="CattleType_ListView" Caption="Cattle Type" ImageName="PivotTableOptions" ObjectKey="" ViewId="CattleType_ListView" IsNewNode="True" />
+          <Item Id="CattleVaccine_ListView" Caption="Cattle Vaccine" ImageName="FunctionsCompatibility" ObjectKey="" ViewId="CattleVaccine_ListView" IsNewNode="True" />
+          <Item Id="CattleVaccineFor_ListView" Caption="Cattle Vaccine For" ImageName="ItemTypeChecked" ObjectKey="" ViewId="CattleVaccineFor_ListView" IsNewNode="True" />
+          <Item Id="CattleWeight_ListView" Caption="Cattle Weight" ImageName="WeightedPies" ObjectKey="" ViewId="CattleWeight_ListView" IsNewNode="True" />
+          <Item Id="MeasureUnit_ListView" Caption="Measure Unit" ObjectKey="" ViewId="MeasureUnit_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items>
+          <Item Id="Cattle_ListView" Caption="Cattle " ImageName="NewTableStyle" Removed="True" />
+          <Item Id="CattleAgeType_ListView" Caption="Cattle Age Type" ImageName="Action_Chart_Printing_Preview" Removed="True" />
+          <Item Id="CattleAgeTypeSetting_ListView" Caption="Cattle Age Type Setting" ImageName="Action_Chart_Options" Removed="True" />
+          <Item Id="CattleBreed_ListView" Caption="Cattle Breed" ImageName="Other Charts" Removed="True" />
+          <Item Id="CattleColor_ListView" Caption="Cattle Color" ImageName="LocalColors" Removed="True" />
+          <Item Id="CattleFeed_ListView" Caption="Cattle Feed" ImageName="ShowPieCaptions" Removed="True" />
+          <Item Id="CattleFeedConsumption_ListView" Caption="Cattle Feed Consumption" ImageName="ChartType_Funnel3D" Removed="True" />
+          <Item Id="CattleFeedNutrition_ListView" Caption="Cattle Feed Nutrition" ImageName="ChartType_Bubble" Removed="True" />
+          <Item Id="CattleGroup_ListView" Caption="Cattle Group" ImageName="ChartLegendGroup" Removed="True" />
+          <Item Id="CattleMortality_ListView" Caption="Cattle Mortality" ImageName="RedDataBarGradient" Removed="True" />
+          <Item Id="CattlePin_ListView" Caption="Cattle Pin" ImageName="SelectDataSource" Removed="True" />
+          <Item Id="CattlePlant_ListView" Caption="Cattle Plant" ImageName="SetDetailDataMember" Removed="True" />
+          <Item Id="CattlePregnancy_ListView" Caption="Cattle Pregnancy" ImageName="RedToBlack" Removed="True" />
+          <Item Id="CattleScheduleTime_ListView" Caption="Cattle Schedule Time" ImageName="SwitchTimeScalesTo" Removed="True" />
+          <Item Id="CattleType_ListView" Caption="Cattle Type" ImageName="PivotTableOptions" Removed="True" />
+          <Item Id="CattleVaccine_ListView" Caption="Cattle Vaccine" ImageName="FunctionsCompatibility" Removed="True" />
+          <Item Id="CattleVaccineFor_ListView" Caption="Cattle Vaccine For" ImageName="ItemTypeChecked" Removed="True" />
+          <Item Id="CattleWeight_ListView" Caption="Cattle Weight" ImageName="WeightedPies" Removed="True" />
+          <Item Id="FeedSchedule_ListView" ImageName="Actions_Calendar" Removed="True" />
+          <Item Id="FeedTaskDetail_ListView" ImageName="BO_Task" Removed="True" />
+          <Item Id="MeasureUnit_ListView" Caption="Measure Unit" ImageName="AllowUsersToEditRanges" Removed="True" />
+          <Item Id="UserLoginInfo_ListView" ImageName="BO_Customer" />
+        </Items>
+      </Item>
+      <Item Id="Feed" ImageName="Action_CreateDashboard_32x32" Caption="Feed" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="FeedSchedule_ListView" ObjectKey="" ViewId="FeedSchedule_ListView" IsNewNode="True" />
+          <Item Id="FeedTaskDetail_ListView" ViewId="FeedTaskDetail_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="KPI" ImageName="BO_KPI_Definition_32x32" />
+      <Item Id="Master" ImageName="MultipleDocuments_32x32" />
+      <Item Id="Reports" ImageName="Action_Report_Object_Inplace_Preview_32x32" />
+      <Item Id="State Machine" ImageName="Action_StateMachine_32x32" />
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="23.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="23.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="23.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="Cattle_cattlegroup_ListView" ImageName="ChartLegendGroup" Caption="Cattle Group" />
+    <DetailView Id="Cattle_DetailView" Caption="Cattle " ImageName="NewTableStyle">
+      <Items>
+        <PropertyEditor Id="isfullbreed" Caption="Is Full Breed" />
+        <PropertyEditor Id="litterno" Caption="Litter No." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="Item4" ShowCaption="True" Caption="Add Cattle" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="34.52157598499062" IsNewNode="True">
+            <LayoutGroup Id="Autofb9ce9ed-e21f-4350-9c53-dbcb63dc986b" ShowCaption="False" Caption="" Index="0" RelativeSize="28.094725511302475" IsNewNode="True">
+              <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="23.28767123287671" IsNewNode="True" />
+              <LayoutItem Id="gender" ViewItem="gender" Index="1" RelativeSize="17.80821917808219" IsNewNode="True" />
+              <LayoutItem Id="isfullbreed" ViewItem="isfullbreed" Index="2" RelativeSize="17.80821917808219" IsNewNode="True" />
+              <LayoutItem Id="breed" ViewItem="breed" Index="3" RelativeSize="17.80821917808219" IsNewNode="True" />
+              <LayoutItem Id="cattletype" ViewItem="cattletype" Index="4" RelativeSize="23.28767123287671" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Autocaf5daa8-a7e6-4ffd-884c-24b91a0b6806" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="71.90527448869753" IsNewNode="True">
+              <LayoutGroup Id="Auto4fdc5278-1acc-4d55-9791-4ecc01b6e880" ShowCaption="False" Caption="" Index="0" RelativeSize="33.98203592814371" IsNewNode="True">
+                <LayoutItem Id="tagnumber" ViewItem="tagnumber" Index="0" RelativeSize="23.28767123287671" IsNewNode="True" />
+                <LayoutItem Id="dateofbirth" ViewItem="dateofbirth" Index="1" RelativeSize="17.80821917808219" IsNewNode="True" />
+                <LayoutItem Id="litterno" ViewItem="litterno" Index="2" RelativeSize="17.80821917808219" IsNewNode="True" />
+                <LayoutItem Id="isbreedingstock" ViewItem="isbreedingstock" Index="3" RelativeSize="17.80821917808219" IsNewNode="True" />
+                <LayoutItem Id="cattlepen" ViewItem="cattlepen" Index="4" RelativeSize="23.28767123287671" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Auto4edf1777-79e2-470b-ba5b-b952f75b2e87" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="66.01796407185628" IsNewNode="True">
+                <LayoutItem Id="Item1" Index="0" RelativeSize="2.2675736961451247" IsNewNode="True" />
+                <LayoutGroup Id="Auto77599858-9a0a-480d-9608-012d499492fe" ShowCaption="False" Caption="" Index="1" RelativeSize="97.73242630385488" IsNewNode="True">
+                  <LayoutGroup Id="Auto20e3ba7d-5fe9-4b6a-ab95-11e15d1d2846" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="23.28767123287671" IsNewNode="True">
+                    <LayoutItem Id="fathertagnumber" ViewItem="fathertagnumber" Index="0" RelativeSize="49.419953596287705" IsNewNode="True" />
+                    <LayoutItem Id="mothertagnumber" ViewItem="mothertagnumber" Index="1" RelativeSize="50.580046403712295" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto3f0fb822-8bfa-4df5-b234-059fd7121820" ShowCaption="False" Caption="" Index="1" RelativeSize="76.71232876712328" IsNewNode="True">
+                    <LayoutGroup Id="Autob27a09b8-f81f-4b21-b838-1171e238080b" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="23.214285714285715" IsNewNode="True">
+                      <LayoutItem Id="weight" ViewItem="weight" Index="0" RelativeSize="49.419953596287705" IsNewNode="True" />
+                      <LayoutItem Id="height" ViewItem="height" Index="1" RelativeSize="50.580046403712295" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoa5f83660-0b7e-492a-9091-efa52729ad5e" ShowCaption="False" Caption="" Index="1" RelativeSize="76.78571428571429" IsNewNode="True">
+                      <LayoutItem Id="color" ViewItem="color" Index="0" RelativeSize="30.232558139534884" IsNewNode="True" />
+                      <LayoutGroup Id="Auto4975d035-cce2-4798-aba6-a8fbc05b037d" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="69.76744186046511" IsNewNode="True">
+                        <LayoutGroup Id="Autod8fa344a-1b6d-4312-a048-4bf4c0208d60" ShowCaption="False" Caption="" Index="0" RelativeSize="49.419953596287705" IsNewNode="True">
+                          <LayoutItem Id="purchasedate" ViewItem="purchasedate" Index="0" RelativeSize="43.333333333333336" IsNewNode="True" />
+                          <LayoutItem Id="datedeliveredtofarm" ViewItem="datedeliveredtofarm" Index="1" RelativeSize="56.666666666666664" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto76871629-cad4-4a3a-9056-c465d5e9f078" ShowCaption="False" Caption="" Index="1" RelativeSize="50.580046403712295" IsNewNode="True">
+                          <LayoutItem Id="purchasedfrom" ViewItem="purchasedfrom" Index="0" RelativeSize="43.333333333333336" IsNewNode="True" />
+                          <LayoutItem Id="purchasedprice" ViewItem="purchasedprice" Index="1" RelativeSize="56.666666666666664" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Auto0f8138fb-a421-4504-aeb5-de7113725479" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="4.878048780487805" IsNewNode="True">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="53.31230283911672" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="46.68769716088328" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutItem Id="comment" ViewItem="comment" Index="2" RelativeSize="4.878048780487805" IsNewNode="True" />
+          <TabbedGroup Id="Tabs" RelativeSize="55.72232645403377" Index="3">
+            <LayoutGroup Id="cattlegroup" RelativeSize="100">
+              <LayoutItem Id="cattlegroup" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="feeds" RelativeSize="100">
+              <LayoutItem Id="feeds" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="pregnancy" RelativeSize="100" Caption="Pregnancy">
+              <LayoutItem Id="pregnancy" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="vaccines" RelativeSize="100">
+              <LayoutItem Id="vaccines" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="weighted" RelativeSize="100">
+              <LayoutItem Id="weighted" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5046904315197" Direction="Horizontal" Removed="True">
+            <LayoutGroup Id="Cattle" RelativeSize="10.526315789473685" Index="1" Removed="True">
+              <LayoutGroup Id="Cattle_col1" RelativeSize="49.920760697305866" Caption="Cattle_col1">
+                <LayoutItem Id="breed" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="cattlepen" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="cattletype" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="comment" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="dateofbirth" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="gender" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="isbreedingstock" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="isfullbreed" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="litterno" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="name" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="tagnumber" Index="0" RelativeSize="10.526315789473685" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Cattle_col2" RelativeSize="50.079239302694134" Caption="Cattle_col2">
+                <LayoutItem Id="color" RelativeSize="15.384615384615385" Index="0" Removed="True" />
+                <LayoutItem Id="datedeliveredtofarm" RelativeSize="23.529411764705884" Index="0" Removed="True" />
+                <LayoutItem Id="height" RelativeSize="13.793103448275861" Index="0" Removed="True" />
+                <LayoutItem Id="mothertagnumber" RelativeSize="11.428571428571429" Index="0" Removed="True" />
+                <LayoutItem Id="purchasedate" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="purchasedfrom" RelativeSize="20" Index="0" Removed="True" />
+                <LayoutItem Id="purchasedprice" RelativeSize="28.571428571428573" Index="0" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="36.36363636363637" Index="0" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="weight" RelativeSize="12.5" Index="0" Removed="True" />
+                <LayoutItem Id="fathertagnumber" RelativeSize="10.526315789473685" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Cattle_feeds_ListView" Caption="Cattle Feed Consumption" ImageName="ChartType_Funnel3D" />
+    <ListView Id="Cattle_ListView" Caption="Cattle " ImageName="NewTableStyle">
+      <Columns>
+        <ColumnInfo Id="userlogin" Index="-1" />
+        <ColumnInfo Id="name" Width="161" />
+      </Columns>
+    </ListView>
+    <ListView Id="Cattle_LookupListView" ImageName="NewTableStyle" Caption="Cattle" />
+    <ListView Id="Cattle_pregnancy_ListView" ImageName="RedToBlack" Caption="Cattle Pregnancy" />
+    <ListView Id="Cattle_vaccines_ListView" Caption="Cattle Vaccine For" ImageName="ItemTypeChecked" />
+    <ListView Id="Cattle_weighted_ListView" ImageName="WeightedPies" Caption="Cattle Weight" />
+    <DetailView Id="CattleAgeType_DetailView" ImageName="Action_Chart_Printing_Preview" Caption="Cattle Age Type">
+      <Items>
+        <PropertyEditor Id="cattletype" Caption="Cattle Type" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="28.22822822822823" Direction="Vertical" Caption="SimpleEditors">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Age Type" Direction="Horizontal" IsNewNode="True">
+              <LayoutGroup Id="Auto604344b4-219c-4374-84c2-0ee881e05ace" ShowCaption="False" Caption="" Index="0" RelativeSize="49.957007738607054" IsNewNode="True">
+                <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="25" IsNewNode="True" />
+                <LayoutItem Id="description" ViewItem="description" Index="1" RelativeSize="50" IsNewNode="True" />
+                <LayoutGroup Id="Auto1a34faf5-7aa7-4d31-a2c4-f09d0635e7b7" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="25" IsNewNode="True">
+                  <LayoutItem Id="start" ViewItem="start" Index="0" RelativeSize="49.91394148020654" IsNewNode="True" />
+                  <LayoutItem Id="end" ViewItem="end" Index="1" RelativeSize="50.08605851979346" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="cattletype" ViewItem="cattletype" Index="1" RelativeSize="50.042992261392946" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CattleAgeType" RelativeSize="39.53488372093023" Index="4" Removed="True">
+              <LayoutGroup Id="CattleAgeType_col1" RelativeSize="50" Caption="CattleAgeType_col1">
+                <LayoutItem Id="cattletype" Index="0" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="end" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="start" Index="0" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleAgeType_col2" RelativeSize="50" Caption="CattleAgeType_col2">
+                <LayoutItem Id="Updateby" RelativeSize="36.36363636363637" Index="0" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" />
+                <LayoutItem Id="userlogin" RelativeSize="50" Index="1" Removed="True" />
+                <LayoutItem Id="name" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="71.77177177177177" Caption="Description">
+            <LayoutGroup Id="Auto8d7661d5-cfae-418e-ae22-f10500e5d62d" ShowCaption="False" Caption="Auto8d7661d5-cfae-418e-ae22-f10500e5d62d(9)" Direction="Vertical" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Auto0444667d-87d6-4ea8-ae8f-871250549e63" ShowCaption="False" Caption="Auto0444667d-87d6-4ea8-ae8f-871250549e63(10)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+                <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="description" RelativeSize="91.93548387096774" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleAgeType_ListView" ImageName="Action_Chart_Printing_Preview" Caption="Cattle Age Type" />
+    <ListView Id="CattleAgeType_LookupListView" Caption="Cattle Age Type" ImageName="Action_Chart_Printing_Preview" />
+    <DetailView Id="CattleAgeTypeSetting_DetailView" ImageName="Action_Chart_Options" Caption="Cattle Age Type Setting">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="20.72072072072072" Caption="Age Type Setting" Direction="Vertical" IsNewNode="True">
+              <LayoutItem Id="cattletype" ViewItem="cattletype" Index="0" RelativeSize="36.734693877551024" IsNewNode="True" />
+              <LayoutGroup Id="Autoafeb2843-add0-40d1-8f61-5b6d89ce5ada" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="63.265306122448976" IsNewNode="True">
+                <LayoutGroup Id="Auto5abaa330-3142-4f2e-9353-a11b57e5b650" ShowCaption="False" Caption="" Index="0" RelativeSize="38.349097162510745" IsNewNode="True">
+                  <LayoutItem Id="startweaner" ViewItem="startweaner" Index="0" RelativeSize="41.935483870967744" IsNewNode="True" />
+                  <LayoutItem Id="endweaner" ViewItem="endweaner" Index="1" RelativeSize="58.064516129032256" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto9081dcfe-77e4-4a66-8aac-6e7ec6768dd5" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="61.650902837489255" IsNewNode="True">
+                  <LayoutGroup Id="Autodcbd7088-ce0c-4a7b-837d-0e7cdcf32082" ShowCaption="False" Caption="" Index="0" RelativeSize="62.06415620641562" IsNewNode="True">
+                    <LayoutItem Id="startgrower" ViewItem="startgrower" Index="0" RelativeSize="41.935483870967744" IsNewNode="True" />
+                    <LayoutItem Id="endgrower" ViewItem="endgrower" Index="1" RelativeSize="58.064516129032256" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autobb124822-3332-40f3-94f9-140159341846" ShowCaption="False" Caption="" Index="1" RelativeSize="37.93584379358438" IsNewNode="True">
+                    <LayoutItem Id="startfinishergiltboar" ViewItem="startfinishergiltboar" Index="0" RelativeSize="41.935483870967744" IsNewNode="True" />
+                    <LayoutItem Id="endfinishergiltboar" ViewItem="endfinishergiltboar" Index="1" RelativeSize="58.064516129032256" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Autodcfbfc19-5fec-46dd-9f29-5d2e56557e91" ShowCaption="False" Caption="Autodcfbfc19-5fec-46dd-9f29-5d2e56557e91(10)" Direction="Horizontal" Index="1" RelativeSize="79.27927927927928" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="50.798990748528176" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="49.201009251471824" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CattleAgeTypeSetting" RelativeSize="62.46913580246913" Index="4" Removed="True">
+              <LayoutGroup Id="CattleAgeTypeSetting_col1" RelativeSize="50" Caption="CattleAgeTypeSetting_col1">
+                <LayoutItem Id="cattletype" Index="0" RelativeSize="8.791208791208792" Removed="True" />
+                <LayoutItem Id="endgrower" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="endweaner" Index="0" RelativeSize="10.126582278481013" Removed="True" />
+                <LayoutItem Id="startgrower" Index="0" RelativeSize="10.95890410958904" Removed="True" />
+                <LayoutItem Id="startweaner" Index="0" RelativeSize="9.411764705882353" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleAgeTypeSetting_col2" RelativeSize="50" Caption="CattleAgeTypeSetting_col2">
+                <LayoutItem Id="endfinishergiltboar" RelativeSize="13.114754098360656" Index="0" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="13.114754098360656" Index="0" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="13.114754098360656" Index="0" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="startfinishergiltboar" RelativeSize="13.114754098360656" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleAgeTypeSetting_ListView" ImageName="Action_Chart_Options" Caption="Cattle Age Type Setting" />
+    <ListView Id="CattleAgeTypeSetting_LookupListView" Caption="Cattle Age Type Setting" ImageName="Action_Chart_Options" />
+    <DetailView Id="CattleBreed_DetailView" ImageName="Other Charts" Caption="Cattle Breed">
+      <Items>
+        <PropertyEditor Id="cattletype" Caption="Cattle Type" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="24.324324324324323" Direction="Vertical" Caption="SimpleEditors">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Breed" Direction="Horizontal" IsNewNode="True">
+              <LayoutGroup Id="Auto3916cba7-2617-42b2-8810-0546f49b8d4b" ShowCaption="False" Caption="" Index="0" RelativeSize="49.957007738607054" IsNewNode="True">
+                <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="30.508474576271187" IsNewNode="True" />
+                <LayoutItem Id="description" ViewItem="description" Index="1" RelativeSize="69.49152542372882" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="cattletype" ViewItem="cattletype" Index="1" RelativeSize="50.042992261392946" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CattleBreed" RelativeSize="50" Direction="Vertical" Index="1" Removed="True">
+              <LayoutGroup Id="CattleBreed_col1" RelativeSize="100" Caption="CattleBreed_col1">
+                <LayoutItem Id="cattletype" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="name" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleBreed_col2" RelativeSize="50" Caption="CattleBreed_col2" Removed="True">
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="36.36363636363637" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="75.67567567567568" Caption="Description">
+            <LayoutGroup Id="Auto51f2e7ec-566a-48ad-89a9-e15fdd606a41" ShowCaption="False" Caption="Auto51f2e7ec-566a-48ad-89a9-e15fdd606a41(7)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="description" RelativeSize="91.11111111111111" Index="0" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleBreed_ListView" ImageName="Other Charts" Caption="Cattle Breed" />
+    <ListView Id="CattleBreed_LookupListView" ImageName="Other Charts" Caption="Cattle Breed" />
+    <DetailView Id="CattleColor_DetailView" ImageName="LocalColors" Caption="Cattle Color">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" Caption="SimpleEditors">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="12.912912912912914" Caption="Color" IsNewNode="True">
+              <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Auto62a4605d-0705-4123-acca-6b1e747722ff" ShowCaption="False" Caption="Auto62a4605d-0705-4123-acca-6b1e747722ff(4)" Direction="Horizontal" Index="1" RelativeSize="87.08708708708708" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CattleColor" RelativeSize="86.17283950617283" Index="2" Removed="True">
+              <LayoutGroup Id="CattleColor_col1" RelativeSize="50" Caption="CattleColor_col1">
+                <LayoutItem Id="name" Index="0" RelativeSize="8.791208791208792" Removed="True" />
+                <LayoutItem Id="Updateby" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleColor_col2" RelativeSize="50" Caption="CattleColor_col2">
+                <LayoutItem Id="Updatedate" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="91.20879120879121" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleColor_ListView" Caption="Cattle Color" ImageName="LocalColors" />
+    <ListView Id="CattleColor_LookupListView" ImageName="LocalColors" Caption="Cattle Color" />
+    <DetailView Id="CattleFeed_DetailView" ImageName="ShowPieCaptions" Caption="Cattle Feed">
+      <Items>
+        <PropertyEditor Id="cattletype" Caption="Cattle Type" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="25.225225225225227">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Cattle Feed" Direction="Vertical" IsNewNode="True">
+              <LayoutGroup Id="Auto8cba937b-b431-44a4-b47d-1813605ae14a" ShowCaption="False" Caption="Auto8cba937b-b431-44a4-b47d-1813605ae14a(4)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Auto67d07b2a-647f-47c0-9ef5-8c7e20f1cee1" ShowCaption="False" Caption="Auto67d07b2a-647f-47c0-9ef5-8c7e20f1cee1(5)" Index="0" RelativeSize="49.871023215821154" IsNewNode="True">
+                  <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="29.032258064516128" IsNewNode="True" />
+                  <LayoutItem Id="measurementunit" ViewItem="measurementunit" Index="1" RelativeSize="20.967741935483872" IsNewNode="True" />
+                  <LayoutItem Id="cattletype" ViewItem="cattletype" Index="2" RelativeSize="20.967741935483872" IsNewNode="True" />
+                  <LayoutItem Id="description" ViewItem="description" Index="3" RelativeSize="29.032258064516128" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Item2" Index="1" RelativeSize="50.128976784178846" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="CattleFeed" RelativeSize="40.57142857142857" Index="4" Removed="True">
+              <LayoutGroup Id="CattleFeed_col1" RelativeSize="50" Caption="CattleFeed_col1">
+                <LayoutItem Id="cattletype" Index="0" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="description" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="name" Index="0" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleFeed_col2" RelativeSize="50" Caption="CattleFeed_col2">
+                <LayoutItem Id="Updateby" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" />
+                <LayoutItem Id="userlogin" RelativeSize="36.36363636363637" Index="2" Removed="True" />
+                <LayoutItem Id="measurementunit" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Auto8dc2b0c8-7c75-475b-b80d-bd612ad99007" ShowCaption="False" Caption="Auto8dc2b0c8-7c75-475b-b80d-bd612ad99007(11)" Direction="Horizontal" Index="1" RelativeSize="5.7057057057057055" IsNewNode="True">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.87384356602187" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.12615643397813" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="nurition_Group" Direction="Vertical" RelativeSize="69.06906906906907" Caption="Nutrition" Index="2">
+            <LayoutItem Id="nurition" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleFeed_ListView" ImageName="ShowPieCaptions" Caption="Cattle Feed" DetailViewID="" />
+    <ListView Id="CattleFeed_LookupListView" Caption="Cattle Feed" ImageName="ShowPieCaptions" />
+    <ListView Id="CattleFeed_nurition_ListView" Caption="Cattle Feed Nutrition" ImageName="ChartType_Bubble" />
+    <DetailView Id="CattleFeedConsumption_DetailView" ImageName="ChartType_Funnel3D" Caption="Cattle Feed Consumption">
+      <Items>
+        <PropertyEditor Id="feedtaskdetail" Caption="Feed Task Detail" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="29.72972972972973" Caption="Feed Consumption" Direction="Vertical" IsNewNode="True">
+              <LayoutGroup Id="Auto9e69c7ba-3791-488b-87e0-386ae89984ef" ShowCaption="False" Caption="Auto9e69c7ba-3791-488b-87e0-386ae89984ef(4)" Index="0" RelativeSize="100" Direction="Vertical" IsNewNode="True">
+                <LayoutGroup Id="Autoc17ba077-de72-492a-8efc-6cd697dbbe1e" ShowCaption="False" Caption="Autoc17ba077-de72-492a-8efc-6cd697dbbe1e(5)" Direction="Vertical" Index="0" RelativeSize="27.848101265822784" IsNewNode="True">
+                  <LayoutItem Id="date" ViewItem="date" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="cattle" ViewItem="cattle" Index="1" RelativeSize="16.455696202531644" IsNewNode="True" />
+                <LayoutItem Id="feedtaskdetail" ViewItem="feedtaskdetail" Index="2" RelativeSize="16.455696202531644" IsNewNode="True" />
+                <LayoutItem Id="seqno" ViewItem="seqno" Index="3" RelativeSize="16.455696202531644" IsNewNode="True" />
+                <LayoutItem Id="kg" ViewItem="kg" Index="4" RelativeSize="22.78481012658228" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Autoa49710cf-4b59-4c44-b46e-4586738e0bf2" ShowCaption="False" Caption="Autoa49710cf-4b59-4c44-b46e-4586738e0bf2(7)" Direction="Horizontal" Index="1" RelativeSize="70.27027027027027" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.87384356602187" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.12615643397813" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CattleFeedConsumption" RelativeSize="62.46913580246913" Index="6" Removed="True">
+              <LayoutGroup Id="CattleFeedConsumption_col1" RelativeSize="50" Caption="CattleFeedConsumption_col1">
+                <LayoutItem Id="cattle" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="date" Index="0" RelativeSize="9.411764705882353" Removed="True" />
+                <LayoutItem Id="feedtaskdetail" Index="0" RelativeSize="8.791208791208792" Removed="True" />
+                <LayoutItem Id="seqno" Index="0" RelativeSize="10.126582278481013" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleFeedConsumption_col2" RelativeSize="50" Caption="CattleFeedConsumption_col2">
+                <LayoutItem Id="Updateby" RelativeSize="13.114754098360656" Index="0" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="77.04918032786885" Index="2" Removed="True" />
+                <LayoutItem Id="kg" RelativeSize="11.940298507462687" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleFeedConsumption_ListView" Caption="Cattle Feed Consumption" ImageName="ChartType_Funnel3D" />
+    <ListView Id="CattleFeedConsumption_LookupListView" ImageName="ChartType_Funnel3D" Caption="Cattle Feed Consumption" />
+    <DetailView Id="CattleFeedNutrition_DetailView" ImageName="ChartType_Bubble" Caption="Cattle Feed Nutrition">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="18.01801801801802" Caption="SimpleEditors">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Feed Nutrition" IsNewNode="True">
+              <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="50" IsNewNode="True" />
+              <LayoutItem Id="description" ViewItem="description" Index="1" RelativeSize="50" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CattleFeedNutrition" RelativeSize="55.90551181102362" Index="2" Removed="True">
+              <LayoutGroup Id="CattleFeedNutrition_col1" RelativeSize="49.90925589836661" Caption="CattleFeedNutrition_col1">
+                <LayoutItem Id="description" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="name" Index="0" RelativeSize="36.36363636363637" Removed="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleFeedNutrition_col2" RelativeSize="50.09074410163339" Caption="CattleFeedNutrition_col2">
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="50" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="feed_Group" Direction="Vertical" RelativeSize="81.98198198198199" Caption="Feed">
+            <LayoutItem Id="feed" RelativeSize="91.30434782608695" />
+            <LayoutGroup Id="Auto1d613a74-c60a-43dd-9321-17d39a3ed6d4" ShowCaption="False" Caption="Auto1d613a74-c60a-43dd-9321-17d39a3ed6d4(7)" Direction="Horizontal" Index="1" RelativeSize="8.695652173913043" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.871023215821154" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.128976784178846" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleFeedNutrition_feed_ListView" ImageName="ShowPieCaptions" Caption="Cattle Feed" />
+    <ListView Id="CattleFeedNutrition_ListView" Caption="Cattle Feed Nutrition" ImageName="ChartType_Bubble" />
+    <ListView Id="CattleFeedNutrition_LookupListView" ImageName="ChartType_Bubble" Caption="Cattle Feed Nutrition" />
+    <ListView Id="CattleGroup_cattle_ListView" Caption="Cattle" ImageName="NewTableStyle">
+      <Columns>
+        <ColumnInfo Id="Updateby" Index="-1" />
+        <ColumnInfo Id="Updatedate" Index="-1" />
+        <ColumnInfo Id="userlogin" SortIndex="0" SortOrder="Ascending" Index="-1" />
+        <ColumnInfo Id="name" Width="206" SortIndex="-1" SortOrder="None" />
+      </Columns>
+    </ListView>
+    <DetailView Id="CattleGroup_DetailView" ImageName="ChartLegendGroup" Caption="Cattle Group">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="24.324324324324323">
+            <LayoutGroup Id="CattleGroup" Caption="Group" RelativeSize="100">
+              <LayoutGroup Id="CattleGroup_col1" RelativeSize="49.957007738607054" Caption="CattleGroup_col1">
+                <LayoutItem Id="cattletype" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="name" RelativeSize="30.508474576271187" Index="0" />
+                <LayoutItem Id="description" ViewItem="description" Index="1" RelativeSize="69.49152542372882" IsNewNode="True" />
+                <LayoutItem Id="Oid" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleGroup_col2" RelativeSize="50.042992261392946" Caption="CattleGroup_col2">
+                <LayoutItem Id="cattletype" ViewItem="cattletype" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Updateby" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="50" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="5.7057057057057055" Caption="Description" Direction="Horizontal">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            <LayoutItem Id="description" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="cattle_Group" Direction="Vertical" RelativeSize="69.96996996996997">
+            <LayoutItem Id="cattle" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleGroup_ListView" ImageName="ChartLegendGroup" Caption="Cattle Group" />
+    <ListView Id="CattleGroup_LookupListView" Caption="Cattle Group" ImageName="ChartLegendGroup" />
+    <DetailView Id="CattleMortality_DetailView" ImageName="RedDataBarGradient" Caption="Cattle Mortality">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="93.993993993994">
+            <LayoutGroup Id="CattleMortality" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Auto9952f01f-a8ca-47a0-ac88-5f5b80adaddd" ShowCaption="False" Caption="Auto9952f01f-a8ca-47a0-ac88-5f5b80adaddd(4)" Direction="Horizontal" Index="0" RelativeSize="16.49484536082474" IsNewNode="True">
+                <LayoutGroup Id="Auto45f4109d-37b2-401a-92f6-4666dc676355" ShowCaption="False" Caption="Auto45f4109d-37b2-401a-92f6-4666dc676355(5)" Index="0" RelativeSize="47.1195184866724" IsNewNode="True">
+                  <LayoutItem Id="causeofdeath" ViewItem="causeofdeath" Index="0" RelativeSize="37.5" IsNewNode="True" />
+                  <LayoutItem Id="cattletag" ViewItem="cattletag" Index="1" RelativeSize="27.083333333333332" IsNewNode="True" />
+                  <LayoutItem Id="deathdate" ViewItem="deathdate" Index="2" RelativeSize="35.416666666666664" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="CattleMortality_col2" ShowCaption="False" Index="1" RelativeSize="52.8804815133276" Caption="CattleMortality_col2" Direction="Horizontal" IsNewNode="True">
+                  <LayoutGroup Id="Autoe663c7b1-4451-449a-abdb-3101024dd203" ShowCaption="False" Caption="" Index="0" RelativeSize="49.43089430894309" IsNewNode="True">
+                    <LayoutItem Id="paddling" ViewItem="paddling" Index="0" RelativeSize="37.5" IsNewNode="True" />
+                    <LayoutItem Id="suddendeath" ViewItem="suddendeath" Index="1" RelativeSize="27.083333333333332" IsNewNode="True" />
+                    <LayoutItem Id="fever" ViewItem="fever" Index="2" RelativeSize="35.416666666666664" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto896bd19f-fb47-4f2a-a491-c42105c14aa6" ShowCaption="False" Caption="" Index="1" RelativeSize="50.56910569105691" IsNewNode="True">
+                    <LayoutItem Id="tremorsorsesizures" ViewItem="tremorsorsesizures" Index="0" RelativeSize="37.5" IsNewNode="True" />
+                    <LayoutItem Id="uncoordinatedorweekness" ViewItem="uncoordinatedorweekness" Index="1" RelativeSize="62.5" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="CattleMortality_col1" ShowCaption="False" Index="1" RelativeSize="83.50515463917526" Caption="CattleMortality_col1" IsNewNode="True" Removed="True">
+                <LayoutItem Id="comments" ViewItem="comments" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleMortality_col2" RelativeSize="50.05382131324004" Removed="True">
+                <LayoutItem Id="fever" RelativeSize="23.28767123287671" />
+                <LayoutItem Id="tremorsorsesizures" RelativeSize="76.71232876712328" />
+                <LayoutItem Id="uncoordinatedorweekness" RelativeSize="58.9041095890411" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="41.0958904109589" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="23.28767123287671" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="19.767441860465116" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="6.006006006006006" Caption="Comments" Direction="Horizontal">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="48.61227922624054" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="51.38772077375946" IsNewNode="True" />
+            <LayoutItem Id="comments" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleMortality_ListView" ImageName="RedDataBarGradient" Caption="Cattle Mortality" />
+    <ListView Id="CattleMortality_LookupListView" Caption="Cattle Mortality" ImageName="RedDataBarGradient" />
+    <DetailView Id="CattlePin_DetailView" ImageName="SelectDataSource" Caption="Cattle Pin">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CattlePin" RelativeSize="32.432432432432435">
+              <LayoutGroup Id="CattlePin_col1" RelativeSize="49.871023215821154" Caption="CattlePin_col1">
+                <LayoutItem Id="name" RelativeSize="20.454545454545453" Index="0" />
+                <LayoutItem Id="cattletype" ViewItem="cattletype" Index="1" RelativeSize="14.772727272727273" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="cattleplant" ViewItem="cattleplant" Index="2" RelativeSize="14.772727272727273" IsNewNode="True" />
+                <LayoutItem Id="maximumcattles" ViewItem="maximumcattles" Index="3" RelativeSize="14.772727272727273" IsNewNode="True" />
+                <LayoutItem Id="size" ViewItem="size" Index="4" RelativeSize="14.772727272727273" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="description" ViewItem="description" Index="5" RelativeSize="20.454545454545453" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="6.981519507186858" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattlePin_col2" RelativeSize="50.128976784178846" Caption="CattlePin_col2">
+                <LayoutItem Id="cattleplant" ViewItem="cattleplant" Index="0" RelativeSize="36.170212765957444" Removed="True" />
+                <LayoutItem Id="maximumcattles" ViewItem="maximumcattles" Index="0" RelativeSize="36.170212765957444" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="87.67967145790554" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="82.34086242299794" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto7c15b1a2-db81-48fa-b7d7-cf1513cd8a3d" ShowCaption="False" Caption="Auto7c15b1a2-db81-48fa-b7d7-cf1513cd8a3d(12)" Direction="Horizontal" Index="1" RelativeSize="67.56756756756756" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.87384356602187" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.12615643397813" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattlePin_ListView" Caption="Cattle Pin" ImageName="SelectDataSource" />
+    <ListView Id="CattlePin_LookupListView" ImageName="SelectDataSource" Caption="Cattle Pin" />
+    <ListView Id="CattlePlant_cattlepin_ListView" Caption="Cattle Pin" ImageName="SelectDataSource" />
+    <DetailView Id="CattlePlant_DetailView" ImageName="SetDetailDataMember" Caption="Cattle Plant">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="21.92192192192192">
+            <LayoutGroup Id="CattlePlant" RelativeSize="76.71232876712328" Direction="Vertical">
+              <LayoutGroup Id="CattlePlant_col1" RelativeSize="100">
+                <LayoutItem Id="name" RelativeSize="50" Index="0" />
+                <LayoutItem Id="description" RelativeSize="50" Index="1" />
+                <LayoutItem Id="Oid" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattlePlant_col2" RelativeSize="50.05382131324004" Caption="CattlePlant_col2" Removed="True">
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="50" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Autof733402b-72d2-42e7-b2f2-37cfe548d423" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="23.28767123287671" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="cattlepin_Group" Caption="Cattle Pin" Direction="Vertical" RelativeSize="78.07807807807808">
+            <LayoutItem Id="cattlepin" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattlePlant_ListView" Caption="Cattle Plant" ImageName="SetDetailDataMember" />
+    <ListView Id="CattlePlant_LookupListView" ImageName="SetDetailDataMember" Caption="Cattle Plant" />
+    <DetailView Id="CattlePregnancy_DetailView" ImageName="RedToBlack" Caption="Cattle Pregnancy">
+      <Items>
+        <PropertyEditor Id="boartagnumber" Caption="Boar Tag Number" />
+        <PropertyEditor Id="idboarfullbreed" Caption="Is Boar Full Breed" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="39.93993993993994">
+            <LayoutGroup Id="CattlePregnancy" RelativeSize="100">
+              <LayoutGroup Id="CattlePregnancy_col1" RelativeSize="49.957007738607054">
+                <LayoutItem Id="sowgilt" RelativeSize="16.216216216216218" Index="0" />
+                <LayoutItem Id="crossingdate" RelativeSize="11.711711711711711" Index="1" />
+                <LayoutItem Id="typeofcrossing" RelativeSize="11.711711711711711" Index="2" />
+                <LayoutItem Id="boarbreed" RelativeSize="11.711711711711711" Index="3" />
+                <LayoutItem Id="idboarfullbreed" RelativeSize="11.711711711711711" Index="4" />
+                <LayoutItem Id="notes" ViewItem="notes" Index="5" RelativeSize="36.93693693693694" IsNewNode="True" />
+                <LayoutItem Id="Oid" RelativeSize="19.767441860465116" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattlePregnancy_col2" RelativeSize="50.042992261392946">
+                <LayoutItem Id="boartagnumber" RelativeSize="16.216216216216218" />
+                <LayoutItem Id="boarname" RelativeSize="11.711711711711711" />
+                <LayoutItem Id="sementagnumber" RelativeSize="72.07207207207207" />
+                <LayoutItem Id="Updatedate" RelativeSize="15.116279069767442" Index="3" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="50" Index="3" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="15.116279069767442" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Notes" RelativeSize="60.06006006006006" Direction="Horizontal">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            <LayoutItem Id="notes" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattlePregnancy_ListView" ImageName="RedToBlack" Caption="Cattle Pregnancy" />
+    <ListView Id="CattlePregnancy_LookupListView" Caption="Cattle Pregnancy" ImageName="RedToBlack" />
+    <DetailView Id="CattleScheduleTime_DetailView" ImageName="SwitchTimeScalesTo" Caption="Cattle Schedule Time">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="93.993993993994">
+            <LayoutGroup Id="CattleScheduleTime" RelativeSize="100" Direction="Horizontal">
+              <LayoutGroup Id="CattleScheduleTime_col1" ShowCaption="False" Index="0" RelativeSize="49.957007738607054" IsNewNode="True" Removed="True">
+                <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="6.185567010309279" IsNewNode="True" />
+                <LayoutItem Id="measureunit" ViewItem="measureunit" Index="1" RelativeSize="4.4673539518900345" IsNewNode="True" />
+                <LayoutItem Id="times" ViewItem="times" Index="2" RelativeSize="4.4673539518900345" IsNewNode="True" />
+                <LayoutItem Id="description" ViewItem="description" Index="3" RelativeSize="84.87972508591065" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleScheduleTime_col2" ShowCaption="False" Index="1" RelativeSize="50.042992261392946" IsNewNode="True" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Description" RelativeSize="6.006006006006006" Direction="Horizontal">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            <LayoutItem Id="description" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleScheduleTime_ListView" ImageName="SwitchTimeScalesTo" Caption="Cattle Schedule Time" />
+    <ListView Id="CattleScheduleTime_LookupListView" Caption="Cattle Schedule Time" ImageName="SwitchTimeScalesTo" />
+    <DetailView Id="CattleType_DetailView" ImageName="PivotTableOptions" Caption="Cattle Type">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="93.993993993994">
+            <LayoutGroup Id="CattleType" RelativeSize="100">
+              <LayoutGroup Id="CattleType_col1" RelativeSize="49.957007738607054" Caption="CattleType_col1">
+                <LayoutItem Id="name" RelativeSize="6.185567010309279" Index="0" />
+                <LayoutItem Id="description" ViewItem="description" Index="1" RelativeSize="93.81443298969072" IsNewNode="True" />
+                <LayoutItem Id="Updateby" RelativeSize="50" Index="1" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleType_col2" Caption="CattleType_col2" RelativeSize="50.042992261392946">
+                <LayoutItem Id="Updatedate" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="6.006006006006006" Caption="Description" Direction="Horizontal">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            <LayoutItem Id="description" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleType_ListView" Caption="Cattle Type" ImageName="PivotTableOptions" />
+    <ListView Id="CattleType_LookupListView" ImageName="PivotTableOptions" Caption="Cattle Type" />
+    <DetailView Id="CattleVaccine_DetailView" ImageName="FunctionsCompatibility" Caption="Cattle Vaccine">
+      <Items>
+        <PropertyEditor Id="repeat" Caption="Repeat Vaccine" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CattleVaccine" RelativeSize="32.432432432432435" Direction="Horizontal">
+              <LayoutGroup Id="CattleVaccine_col1" ShowCaption="False" Index="0" RelativeSize="49.957007738607054" IsNewNode="True" Removed="True">
+                <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="20.454545454545453" IsNewNode="True" />
+                <LayoutItem Id="perioddays" ViewItem="perioddays" Index="1" RelativeSize="14.772727272727273" IsNewNode="True" />
+                <LayoutItem Id="dose" ViewItem="dose" Index="2" RelativeSize="14.772727272727273" IsNewNode="True" />
+                <LayoutItem Id="measurementunit" ViewItem="measurementunit" Index="3" RelativeSize="14.772727272727273" IsNewNode="True" />
+                <LayoutItem Id="repeat" ViewItem="repeat" Index="4" RelativeSize="14.772727272727273" IsNewNode="True" />
+                <LayoutItem Id="decription" ViewItem="decription" Index="5" RelativeSize="20.454545454545453" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleVaccine_col2" ShowCaption="False" Index="1" RelativeSize="50.042992261392946" IsNewNode="True" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Autocfc2bf6d-43f9-49c9-b271-075f519d4070" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="67.56756756756756" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleVaccine_ListView" ImageName="FunctionsCompatibility" Caption="Cattle Vaccine" />
+    <ListView Id="CattleVaccine_LookupListView" Caption="Cattle Vaccine" ImageName="FunctionsCompatibility" />
+    <DetailView Id="CattleVaccineFor_DetailView" ImageName="ItemTypeChecked" Caption="Cattle Vaccine For">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CattleVaccineFor" RelativeSize="24.624624624624623">
+              <LayoutGroup Id="CattleVaccineFor_col1" RelativeSize="49.957007738607054">
+                <LayoutItem Id="date" ViewItem="date" Index="0" RelativeSize="29.032258064516128" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="vaccine" RelativeSize="20.967741935483872" Index="1" />
+                <LayoutItem Id="cattles" ViewItem="cattles" Index="2" RelativeSize="20.967741935483872" IsNewNode="True" />
+                <LayoutItem Id="cattlepin" RelativeSize="29.032258064516128" Index="3" />
+                <LayoutItem Id="Oid" RelativeSize="28.333333333333332" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleVaccineFor_col2" RelativeSize="50.042992261392946" Caption="CattleVaccineFor_col2">
+                <LayoutItem Id="cattles" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="93.01848049281314" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="87.67967145790554" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto25219f32-1782-4fe0-83d0-af3d86d70fec" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="75.37537537537537" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleVaccineFor_ListView" Caption="Cattle Vaccine For" ImageName="ItemTypeChecked" />
+    <ListView Id="CattleVaccineFor_LookupListView" ImageName="ItemTypeChecked" Caption="Cattle Vaccine For" />
+    <DetailView Id="CattleWeight_DetailView" ImageName="WeightedPies" Caption="Cattle Weight">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CattleWeight" RelativeSize="20.72072072072072" Direction="Vertical">
+              <LayoutGroup Id="CattleWeight_col1" RelativeSize="100" Direction="Horizontal">
+                <LayoutGroup Id="Auto48c83108-33ce-46b1-9182-7d6b64be225e" ShowCaption="False" Caption="" Index="0" RelativeSize="49.957007738607054" IsNewNode="True">
+                  <LayoutItem Id="date" ViewItem="date" Index="0" RelativeSize="36.734693877551024" IsNewNode="True" />
+                  <LayoutItem Id="cattles" ViewItem="cattles" Index="1" RelativeSize="26.53061224489796" IsNewNode="True" />
+                  <LayoutItem Id="cattlepin" ViewItem="cattlepin" Index="2" RelativeSize="36.734693877551024" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="date" RelativeSize="28.333333333333332" Index="0" Removed="True" />
+                <LayoutGroup Id="Auto1069e68d-6885-493b-96d5-b3fde28c6561" ShowCaption="False" Caption="" Index="1" RelativeSize="50.042992261392946" IsNewNode="True">
+                  <LayoutGroup Id="CattleWeight_col2" ShowCaption="False" Index="0" RelativeSize="36.734693877551024" IsNewNode="True" />
+                  <LayoutItem Id="weight" ViewItem="weight" Index="1" RelativeSize="26.53061224489796" IsNewNode="True" />
+                  <LayoutItem Id="height" ViewItem="height" Index="2" RelativeSize="36.734693877551024" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="cattlepin" ViewItem="cattlepin" Index="1" RelativeSize="21.666666666666668" Removed="True" />
+                <LayoutItem Id="height" RelativeSize="28.333333333333332" Index="2" Removed="True" />
+                <LayoutItem Id="weight" RelativeSize="17.80821917808219" Index="3" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="6.981519507186858" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CattleWeight_col2" RelativeSize="50.05382131324004" Caption="CattleWeight_col2" Removed="True">
+                <LayoutItem Id="cattles" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="93.01848049281314" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="87.67967145790554" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto2b47e24f-5ffc-45b5-b05b-d2e7c2ca971e" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="79.27927927927928" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CattleWeight_ListView" ImageName="WeightedPies" Caption="Cattle Weight" />
+    <ListView Id="CattleWeight_LookupListView" Caption="Cattle Weight" ImageName="WeightedPies" />
+    <DetailView Id="FeedSchedule_DetailView" ImageName="Actions_Calendar">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="FeedSchedule" ShowCaption="True" Caption="Feed Schedule" Index="0" RelativeSize="40.24024024024024" IsNewNode="True">
+            <LayoutGroup Id="FeedSchedule_col1" ShowCaption="False" Index="0" RelativeSize="100" Caption="FeedSchedule_col1" Direction="Vertical" IsNewNode="True">
+              <LayoutGroup Id="Auto03dc2435-b9f4-4801-83c0-e9ddd44463f0" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="15.789473684210526" IsNewNode="True">
+                <LayoutItem Id="startdate" ViewItem="startdate" Index="0" RelativeSize="49.957007738607054" IsNewNode="True" />
+                <LayoutItem Id="enddate" ViewItem="enddate" Index="1" RelativeSize="50.042992261392946" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="feedname" ViewItem="feedname" Index="1" RelativeSize="11.403508771929825" IsNewNode="True" />
+              <LayoutItem Id="qtyperpig" ViewItem="qtyperpig" Index="2" RelativeSize="11.403508771929825" IsNewNode="True" />
+              <LayoutItem Id="howmanytimes" ViewItem="howmanytimes" Index="3" RelativeSize="11.403508771929825" IsNewNode="True" />
+              <LayoutItem Id="firstfeedingtimeoftheday" ViewItem="firstfeedingtimeoftheday" Index="4" RelativeSize="11.403508771929825" IsNewNode="True" />
+              <LayoutItem Id="daytype" ViewItem="daytype" Index="5" RelativeSize="11.403508771929825" IsNewNode="True" />
+              <LayoutItem Id="cattlepen" ViewItem="cattlepen" Index="6" RelativeSize="11.403508771929825" IsNewNode="True" />
+              <LayoutItem Id="totalfeedforcattles" ViewItem="totalfeedforcattles" Index="7" RelativeSize="15.789473684210526" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Autobeb67b5b-5075-4083-87f0-e02c96b5f8a5" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="3.903903903903904" IsNewNode="True">
+            <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+            <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="feedtaskdetail_Group" Direction="Vertical" RelativeSize="55.85585585585586" Index="2">
+            <LayoutItem Id="feedtaskdetail" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.5046904315197" Caption="SimpleEditors" Direction="Vertical" Removed="True">
+            <LayoutGroup Id="FeedSchedule" RelativeSize="100" Direction="Vertical" Removed="True">
+              <LayoutGroup Id="FeedSchedule_col1" RelativeSize="100" Caption="FeedSchedule_col1">
+                <LayoutItem Id="feedname" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="howmanytimes" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="qtyperpig" RelativeSize="17.80821917808219" Index="3" Removed="True" />
+                <LayoutItem Id="daytype" RelativeSize="21.666666666666668" Removed="True" />
+                <LayoutItem Id="enddate" RelativeSize="13.131313131313131" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="36.170212765957444" Removed="True" />
+                <LayoutItem Id="startdate" RelativeSize="15.116279069767442" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="FeedSchedule_col2" RelativeSize="50.05382131324004" Caption="FeedSchedule_col2" Removed="True">
+                <LayoutItem Id="cattlepen" RelativeSize="82.82828282828282" Removed="True" />
+                <LayoutItem Id="firstfeedingtimeoftheday" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="totalfeedforcattles" RelativeSize="69.6969696969697" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="56.56565656565657" Removed="True" />
+                <LayoutItem Id="Updatedate" RelativeSize="43.43434343434343" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FeedSchedule_feedtaskdetail_ListView" ImageName="BO_Task" />
+    <ListView Id="FeedSchedule_ListView" ImageName="Actions_Calendar" />
+    <ListView Id="FeedSchedule_LookupListView" ImageName="Actions_Calendar" />
+    <DetailView Id="FeedTaskDetail_DetailView" ImageName="BO_Task">
+      <Items>
+        <PropertyEditor Id="cattlepin" Caption="Cattle Pin" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="46.529080675422136">
+            <LayoutGroup Id="FeedTaskDetail" RelativeSize="84.6774193548387">
+              <LayoutGroup Id="FeedTaskDetail_col1" RelativeSize="49.83853606027987">
+                <LayoutItem Id="date" Index="0" RelativeSize="19.767441860465116" />
+                <LayoutItem Id="cattlepin" Index="1" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="feedschedule" ViewItem="feedschedule" Index="2" RelativeSize="15.116279069767442" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="seqno" Index="3" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="kg" ViewItem="kg" Index="4" RelativeSize="15.116279069767442" IsNewNode="True" />
+                <LayoutItem Id="status" ViewItem="status" Index="5" RelativeSize="19.767441860465116" IsNewNode="True" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="FeedTaskDetail_col2" RelativeSize="50.16146393972013" Caption="FeedTaskDetail_col2">
+                <LayoutItem Id="Updatedate" RelativeSize="50" Index="2" Removed="True" />
+                <LayoutItem Id="kg" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="status" RelativeSize="71.66666666666667" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="21.666666666666668" Removed="True" />
+                <LayoutItem Id="userlogin" RelativeSize="23.28767123287671" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto84b7ced8-4c3b-4137-a3e4-c68085059cd0" ShowCaption="False" Caption="Auto84b7ced8-4c3b-4137-a3e4-c68085059cd0(12)" Direction="Horizontal" Index="1" RelativeSize="15.32258064516129" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.8422712933754" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.1577287066246" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="feedcattles_Group" Direction="Vertical" RelativeSize="53.470919324577864">
+            <LayoutItem Id="feedcattles" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FeedTaskDetail_feedcattles_ListView" ImageName="ChartType_Funnel3D" Caption="Cattle Feed Consumption">
+      <Columns>
+        <ColumnInfo Id="Updateby" Index="-1" />
+        <ColumnInfo Id="Updatedate" Index="-1" />
+        <ColumnInfo Id="userlogin" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="FeedTaskDetail_ListView" ImageName="BO_Task" />
+    <ListView Id="FeedTaskDetail_LookupListView" ImageName="BO_Task" />
+    <DetailView Id="MeasureUnit_DetailView" ImageName="AllowUsersToEditRanges" Caption="Measure Unit">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="MeasureUnit" RelativeSize="16.816816816816818">
+              <LayoutGroup Id="MeasureUnit_col1" RelativeSize="49.957007738607054">
+                <LayoutItem Id="name" RelativeSize="50" Index="0" />
+                <LayoutItem Id="decription" RelativeSize="50" Index="1" />
+                <LayoutItem Id="Oid" RelativeSize="6.981519507186858" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="MeasureUnit_col2" RelativeSize="50.042992261392946" Caption="MeasureUnit_col2">
+                <LayoutItem Id="Updatedate" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Updateby" RelativeSize="6.981519507186858" Removed="True" />
+                <LayoutItem Id="userlogin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Autoaec065dd-f5bf-4e68-b345-48b0372efa1d" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="83.18318318318319" IsNewNode="True">
+              <LayoutItem Id="Updateby" ViewItem="Updateby" Index="0" RelativeSize="49.95794785534062" IsNewNode="True" />
+              <LayoutItem Id="Updatedate" ViewItem="Updatedate" Index="1" RelativeSize="50.04205214465938" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="MeasureUnit_ListView" Caption="Measure Unit" ImageName="AllowUsersToEditRanges" />
+    <ListView Id="MeasureUnit_LookupListView" ImageName="AllowUsersToEditRanges" Caption="Measure Unit" />
+    <DetailView Id="UserLoginInfo_DetailView" ImageName="BO_Customer">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="35.647279549718576">
+            <LayoutGroup Id="UserLoginInfo" RelativeSize="69.47368421052632">
+              <LayoutGroup Id="UserLoginInfo_col1" RelativeSize="49.94617868675996" Caption="UserLoginInfo_col1">
+                <LayoutItem Id="Name" Index="0" RelativeSize="36.170212765957444" />
+                <LayoutItem Id="Photo" ViewItem="Photo" Index="1" RelativeSize="63.829787234042556" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="TelegramID" Index="1" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="UserLoginInfo_col2" RelativeSize="50.05382131324004">
+                <LayoutItem Id="PhoneNumber" RelativeSize="36.170212765957444" />
+                <LayoutItem Id="EmailAddress" RelativeSize="27.659574468085108" />
+                <LayoutItem Id="TelegramID" ViewItem="TelegramID" Index="2" RelativeSize="36.170212765957444" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto0ebc83f0-e41d-4db6-92a4-df49e3f1052c" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="30.526315789473685" IsNewNode="True">
+              <LayoutItem Id="UserName" ViewItem="UserName" Index="0" RelativeSize="49.94742376445846" IsNewNode="True" />
+              <LayoutGroup Id="Auto8c2eb2f3-2468-4492-b5d9-941fc329197c" ShowCaption="False" Caption="" Index="1" RelativeSize="50.05257623554154" IsNewNode="True">
+                <LayoutItem Id="IsActive" ViewItem="IsActive" Index="0" RelativeSize="44.827586206896555" IsNewNode="True" />
+                <LayoutItem Id="ChangePasswordOnFirstLogon" ViewItem="ChangePasswordOnFirstLogon" Index="1" RelativeSize="55.172413793103445" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="PermissionPolicyUser" Index="2" RelativeSize="37.6271186440678" Caption="PermissionPolicyUser" Direction="Vertical" Removed="True">
+              <LayoutItem Id="ChangePasswordOnFirstLogon" ViewItem="ChangePasswordOnFirstLogon" Index="0" RelativeSize="100" Removed="True" />
+              <LayoutItem Id="IsActive" ViewItem="IsActive" Index="0" RelativeSize="49.94742376445846" Removed="True" />
+              <LayoutItem Id="UserName" RelativeSize="50" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Roles_Group" Direction="Vertical" RelativeSize="64.35272045028142" Caption="Roles">
+            <LayoutItem Id="Roles" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="UserLoginInfo_ListView" ImageName="BO_Customer" />
+    <ListView Id="UserLoginInfo_LookupListView" ImageName="BO_Customer" />
+  </Views>
+</Application>
